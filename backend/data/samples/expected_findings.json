@@ -1,0 +1,38 @@
+{
+  "sample_contract_compliant.docx": {
+    "1": { "clause_type": "limitation_of_liability", "expected_risk": "Acceptable", "cited_rules": ["LOL-01", "LOL-02"] },
+    "2": { "clause_type": "indemnification", "expected_risk": "Acceptable", "cited_rules": ["IND-01", "IND-02"] },
+    "3": { "clause_type": "termination", "expected_risk": "Acceptable", "cited_rules": ["TRM-01", "TRM-02"] },
+    "4": { "clause_type": "confidentiality", "expected_risk": "Acceptable", "cited_rules": ["CNF-01"] },
+    "5": { "clause_type": "governing_law", "expected_risk": "Acceptable", "cited_rules": ["GOV-01"] },
+    "6": { "clause_type": "ip_ownership", "expected_risk": "Acceptable", "cited_rules": ["IP-01"] },
+    "7": { "clause_type": "payment_terms", "expected_risk": "Acceptable", "cited_rules": ["PAY-01"] },
+    "8": { "clause_type": "auto_renewal", "expected_risk": "Acceptable", "cited_rules": ["RNW-01"] },
+    "9": { "clause_type": "data_protection", "expected_risk": "Acceptable", "cited_rules": ["DAT-01"] },
+    "10": { "clause_type": "assignment", "expected_risk": "Acceptable", "cited_rules": ["ASG-01"] }
+  },
+  "sample_contract_needs_negotiation.docx": {
+    "1": { "clause_type": "limitation_of_liability", "expected_risk": "Needs Negotiation", "cited_rules": ["LOL-01", "LOL-02"] },
+    "2": { "clause_type": "indemnification", "original_expected_risk": "Needs Negotiation", "expected_risk": "Unacceptable", "cited_rules": ["IND-01"], "label_revision_note": "Hits verbatim IND-01 unacceptable triggers: 'failure to provide reciprocal indemnity for Customer-furnished materials' and 'obligation to indemnify without receiving prompt written notice or sole control of defense'." },
+    "3": { "clause_type": "termination", "expected_risk": "Needs Negotiation", "cited_rules": ["TRM-01"] },
+    "4": { "clause_type": "confidentiality", "expected_risk": "Needs Negotiation", "cited_rules": ["CNF-01"] },
+    "5": { "clause_type": "governing_law", "expected_risk": "Acceptable", "cited_rules": ["GOV-01"] },
+    "6": { "clause_type": "ip_ownership", "expected_risk": "Acceptable", "cited_rules": ["IP-01"] },
+    "7": { "clause_type": "payment_terms", "expected_risk": "Needs Negotiation", "cited_rules": ["PAY-01"] },
+    "8": { "clause_type": "auto_renewal", "expected_risk": "Needs Negotiation", "cited_rules": ["RNW-01"] },
+    "9": { "clause_type": "data_protection", "original_expected_risk": "Acceptable", "expected_risk": "Needs Negotiation", "cited_rules": ["DAT-01"], "label_revision_note": "Benchmark rationale states 48-hour notice and annual SOC 2 report sharing conforms to acceptable fallback, which under the rubric maps to Needs Negotiation." },
+    "10": { "clause_type": "assignment", "expected_risk": "Needs Negotiation", "cited_rules": ["ASG-01"] }
+  },
+  "sample_contract_unacceptable.docx": {
+    "1": { "clause_type": "limitation_of_liability", "expected_risk": "Unacceptable", "cited_rules": ["LOL-01", "LOL-02"] },
+    "2": { "clause_type": "indemnification", "expected_risk": "Unacceptable", "cited_rules": ["IND-01", "IND-02"] },
+    "3": { "clause_type": "termination", "expected_risk": "Unacceptable", "cited_rules": ["TRM-01", "TRM-02"] },
+    "4": { "clause_type": "confidentiality", "expected_risk": "Unacceptable", "cited_rules": ["CNF-01"] },
+    "5": { "clause_type": "governing_law", "expected_risk": "Unacceptable", "cited_rules": ["GOV-01"] },
+    "6": { "clause_type": "ip_ownership", "expected_risk": "Unacceptable", "cited_rules": ["IP-01"] },
+    "7": { "clause_type": "payment_terms", "expected_risk": "Unacceptable", "cited_rules": ["PAY-01"] },
+    "8": { "clause_type": "auto_renewal", "expected_risk": "Unacceptable", "cited_rules": ["RNW-01"] },
+    "9": { "clause_type": "data_protection", "expected_risk": "Unacceptable", "cited_rules": ["DAT-01"] },
+    "10": { "clause_type": "assignment", "expected_risk": "Unacceptable", "cited_rules": ["ASG-01"] }
+  }
+}

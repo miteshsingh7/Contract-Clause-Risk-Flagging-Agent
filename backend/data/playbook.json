@@ -1,0 +1,193 @@
+[
+  {
+    "rule_id": "LOL-01",
+    "clause_type": "limitation_of_liability",
+    "title": "Aggregate Liability Cap",
+    "standard_position": "Mutual aggregate liability is capped at total fees paid or payable by Customer in the preceding twelve (12) months.",
+    "acceptable_fallback": "Cap liability at two times (2x) the 12-month fees, or a fixed reasonable cap ($1,000,000 or 12 months fees, whichever is greater). Specific super-caps for confidentiality or data protection breach are acceptable up to three times (3x) annual fees.",
+    "unacceptable_triggers": [
+      "unlimited liability for general breach",
+      "no liability cap",
+      "one-sided liability cap favoring only Counterparty",
+      "liability cap lower than total fees paid",
+      "total waiver of liability for direct damages"
+    ],
+    "preferred_language": "Except for breaches of Section 4 (Confidentiality) or indemnification obligations under Section 2, neither party's aggregate cumulative liability arising out of or related to this Agreement shall exceed the total amount of fees paid or payable by Customer to Company in the twelve (12) month period immediately preceding the event giving rise to liability.",
+    "rationale": "Prevents catastrophic financial exposure disproportionate to the commercial value of the contract and maintains bilateral fairness."
+  },
+  {
+    "rule_id": "LOL-02",
+    "clause_type": "limitation_of_liability",
+    "title": "Consequential and Indirect Damages Waiver",
+    "standard_position": "Mutual waiver of all indirect, consequential, special, punitive, exemplary, and lost-profit damages.",
+    "acceptable_fallback": "Mutual waiver with strictly limited carve-outs for gross negligence, willful misconduct, and third-party IP indemnification.",
+    "unacceptable_triggers": [
+      "one-sided waiver of consequential damages favoring Counterparty only",
+      "express inclusion of lost profits or business opportunities within recoverable direct damages",
+      "waiver of consequential damages that omits lost data or lost revenue"
+    ],
+    "preferred_language": "In no event shall either party be liable to the other party for any indirect, incidental, consequential, special, punitive, or exemplary damages, including but not limited to loss of profits, data, revenue, or business interruption, regardless of whether advised of the possibility of such damages and regardless of the theory of liability.",
+    "rationale": "Forecloses speculative and potentially unbounded claims for secondary financial damages."
+  },
+  {
+    "rule_id": "IND-01",
+    "clause_type": "indemnification",
+    "title": "Intellectual Property Infringement Indemnification",
+    "standard_position": "Mutual IP indemnity: Company indemnifies Customer against claims that Company software/deliverables infringe third-party IP; Customer indemnifies Company for Customer-provided data and specifications.",
+    "acceptable_fallback": "Company provides unilateral IP infringement defense and indemnity subject to standard exceptions (unauthorized modifications, combination with third-party software, failure to implement updates) and standard tender-of-defense procedural requirements.",
+    "unacceptable_triggers": [
+      "indemnification for patent infringement in non-US jurisdictions without territorial limitation",
+      "obligation to indemnify without receiving prompt written notice or sole control of defense",
+      "Customer right to settle third-party claims at Company's expense without Company's consent",
+      "failure to provide reciprocal indemnity for Customer-furnished materials"
+    ],
+    "preferred_language": "Company shall defend, indemnify, and hold harmless Customer, its officers, directors, and employees from and against any third-party claim, suit, or proceeding alleging that the Services or Deliverables infringe or misappropriate any valid United States patent, copyright, or trade secret. Customer shall indemnify and hold Company harmless against any third-party claim arising from Customer Data or Customer's unauthorized modification of the Services.",
+    "rationale": "Allocates IP risk to the party creating or providing the respective materials while ensuring procedural control over litigation defense and settlement."
+  },
+  {
+    "rule_id": "IND-02",
+    "clause_type": "indemnification",
+    "title": "Mutual General Indemnification Scope",
+    "standard_position": "Indemnity is strictly mutual and limited to third-party claims arising from gross negligence, willful misconduct, or bodily injury/tangible property damage.",
+    "acceptable_fallback": "Mutual indemnity extending to material breaches of confidentiality or applicable data privacy laws, subject to liability caps.",
+    "unacceptable_triggers": [
+      "broad indemnity for ordinary or simple breach of contract",
+      "one-sided general indemnity where Company indemnifies Counterparty but Counterparty has no reciprocal obligations",
+      "requirement to indemnify Counterparty for Counterparty's own negligent acts or omissions",
+      "uncapped indemnification for ordinary representations and warranties"
+    ],
+    "preferred_language": "Each party ('Indemnifying Party') shall defend and indemnify the other party from and against third-party claims, liabilities, and expenses (including reasonable attorney fees) arising directly from the Indemnifying Party's gross negligence, intentional misconduct, or bodily injury or property damage caused by its personnel.",
+    "rationale": "Prevents converting ordinary breach of contract claims—which should be governed by standard damage caps—into unlimited indemnity obligations."
+  },
+  {
+    "rule_id": "TRM-01",
+    "clause_type": "termination",
+    "title": "Termination for Convenience",
+    "standard_position": "Mutual right to terminate for convenience upon thirty (30) days' prior written notice, with payment for all services performed through the termination date.",
+    "acceptable_fallback": "Prior written notice period of sixty (60) or ninety (90) days, or unilateral termination for convenience by Customer provided Customer pays a prorated fee for completed work and non-refundable setup expenses.",
+    "unacceptable_triggers": [
+      "one-sided termination for convenience exercisable solely by Counterparty with immediate effect",
+      "absolute lock-in with zero termination for convenience combined with multi-year mandatory commitments",
+      "early termination penalties, liquidated damages, or acceleration of unaccrued future contract fees upon convenience termination"
+    ],
+    "preferred_language": "Either party may terminate this Agreement or any Statement of Work without cause and for its convenience at any time by providing at least thirty (30) days' advance written notice to the other party. Upon such termination, Customer shall promptly pay Company for all work performed and authorized expenses incurred up to the effective date of termination.",
+    "rationale": "Preserves operational flexibility to exit unfavorable or unworkable business relationships without punitive financial penalties."
+  },
+  {
+    "rule_id": "TRM-02",
+    "clause_type": "termination",
+    "title": "Termination for Material Breach and Insolvency",
+    "standard_position": "Either party may terminate for material breach with thirty (30) days' written notice and opportunity to cure, or immediately upon bankruptcy or insolvency.",
+    "acceptable_fallback": "Fifteen (15) days cure period for payment defaults, thirty (30) days for other material breaches; immediate termination upon formal bankruptcy filing, insolvency, or assignment for the benefit of creditors.",
+    "unacceptable_triggers": [
+      "immediate termination for cause without any opportunity to cure an alleged breach",
+      "asymmetrical cure periods (e.g. 60 days for Counterparty, 5 days for Company)",
+      "prohibition on Company terminating for Customer non-payment"
+    ],
+    "preferred_language": "Either party may terminate this Agreement immediately upon written notice if the other party: (a) materially breaches any provision of this Agreement and fails to cure such breach within thirty (30) days after receipt of written notice specifying the breach; or (b) becomes insolvent, makes an assignment for the benefit of creditors, or files for bankruptcy.",
+    "rationale": "Ensures reasonable notice and fair opportunity to remedy alleged performance defects before contractual termination."
+  },
+  {
+    "rule_id": "CNF-01",
+    "clause_type": "confidentiality",
+    "title": "Mutual Confidentiality and Standard Exclusions",
+    "standard_position": "Mutual confidentiality obligations lasting for three (3) years post-termination, with standard duty of reasonable care and standard legal exclusions (public domain, independent development, court orders). Trade secrets protected indefinitely.",
+    "acceptable_fallback": "Confidentiality duration of two (2) to five (5) years post-termination, with express requirement to return or certify destruction of confidential materials upon written request.",
+    "unacceptable_triggers": [
+      "one-sided confidentiality obligation binding only Company",
+      "omission of standard exclusions (public knowledge, already known, independently developed, compelled disclosure)",
+      "perpetual confidentiality obligations for general, non-trade secret commercial information",
+      "strict liability for accidental disclosure despite reasonable commercial safeguards"
+    ],
+    "preferred_language": "Each party agrees to hold the other party's Confidential Information in confidence using at least the same degree of care it uses for its own confidential information of like nature, but not less than reasonable care. Confidential Information does not include information that: (a) is or becomes publicly known through no breach; (b) was already known to the recipient prior to disclosure; (c) is independently developed without reference to the disclosing party's information; or (d) is rightfully received from a third party without duty of confidentiality. These obligations shall survive termination of this Agreement for three (3) years, provided trade secrets shall be protected for so long as they remain trade secrets under applicable law.",
+    "rationale": "Protects core proprietary know-how and trade secrets while preventing impractical perpetual restrictions on general business knowledge."
+  },
+  {
+    "rule_id": "GOV-01",
+    "clause_type": "governing_law",
+    "title": "Governing Law and Jurisdiction",
+    "standard_position": "Governed by the laws of the State of Delaware (or State of New York), with exclusive venue and jurisdiction in the state or federal courts located therein.",
+    "acceptable_fallback": "Neutral commercial US jurisdiction (e.g., California, Illinois, or home state of Company) or binding commercial arbitration under AAA or JAMS commercial rules held in a mutually agreed US commercial center.",
+    "unacceptable_triggers": [
+      "governing law of a foreign, non-US jurisdiction without prior executive and legal clearance",
+      "exclusive venue in a foreign or remote counterparty forum",
+      "application of the United Nations Convention on Contracts for the International Sale of Goods (CISG)",
+      "mandatory unilateral arbitration where Counterparty chooses the arbitrator"
+    ],
+    "preferred_language": "This Agreement and all disputes arising out of or related to it shall be governed by and construed in accordance with the laws of the State of Delaware, without giving effect to any choice of law or conflict of law provisions. The parties consent to the exclusive personal jurisdiction and venue of the state and federal courts located in Wilmington, Delaware.",
+    "rationale": "Delaware and New York provide well-developed, predictable commercial case law, minimizing legal uncertainty and litigation expense."
+  },
+  {
+    "rule_id": "IP-01",
+    "clause_type": "ip_ownership",
+    "title": "Pre-Existing IP and Deliverables Ownership",
+    "standard_position": "Company retains all right, title, and interest in its pre-existing IP, platform, core technology, tools, and background materials. Customer owns specific custom deliverables upon full payment.",
+    "acceptable_fallback": "Customer owns bespoke deliverables; Company retains ownership of all background IP, generic methodologies, algorithms, and development tools, and grants Customer a perpetual, non-exclusive, worldwide license to use such background IP solely as embedded in the deliverables.",
+    "unacceptable_triggers": [
+      "broad 'work made for hire' assigning all pre-existing code, tools, AI models, or background IP to Customer",
+      "Customer ownership of Company proprietary software, underlying algorithms, or platform improvements",
+      "assignment of IP developed outside or prior to the scope of this Agreement",
+      "prohibition on Company developing similar technology or services for other clients"
+    ],
+    "preferred_language": "Company retains sole and exclusive ownership of all right, title, and interest in and to its pre-existing technology, proprietary tools, software, methodologies, models, and background intellectual property ('Background IP'). Conditioned upon receipt of full payment, Customer shall own all custom, bespoke deliverables created specifically for Customer under an applicable Statement of Work, excluding Background IP. To the extent Background IP is embedded in any deliverable, Company grants Customer a perpetual, non-exclusive, royalty-free license to use such Background IP solely in conjunction with the deliverable.",
+    "rationale": "Protects company core assets and multi-tenant software platforms from inadvertent transfer or forfeiture of intellectual property."
+  },
+  {
+    "rule_id": "PAY-01",
+    "clause_type": "payment_terms",
+    "title": "Invoicing, Payment Window, and Late Interest",
+    "standard_position": "Payment due within Net-30 days from date of invoice; reasonable late payment interest of 1.0% to 1.5% per month on undisputed overdue amounts; good-faith dispute notice within 15 days.",
+    "acceptable_fallback": "Net-45 days payment terms; late fee interest at statutory rate or 1% per month; right to withhold disputed fees provided written notice detailing the dispute is delivered prior to the payment due date.",
+    "unacceptable_triggers": [
+      "Net-60, Net-90, or longer payment terms",
+      "pay-when-paid or pay-if-paid conditional payment clauses",
+      "unilateral right of Counterparty to set off unrelated claims or deductions against undisputed fees",
+      "total prohibition of late fees, interest, or service suspension rights for chronic non-payment"
+    ],
+    "preferred_language": "Customer shall pay all undisputed invoiced fees within thirty (30) days from the date of invoice. Overdue undisputed balances shall accrue interest at the rate of 1.5% per month or the maximum rate permitted by law, whichever is less. If Customer disputes any invoice in good faith, Customer shall notify Company in writing within fifteen (15) days of receipt of such invoice, specifying the grounds for the dispute.",
+    "rationale": "Maintains predictable operating cash flow, prevents uncompensated credit extensions, and limits unauthorized payment withholding."
+  },
+  {
+    "rule_id": "RNW-01",
+    "clause_type": "auto_renewal",
+    "title": "Renewal Term and Advance Non-Renewal Notice",
+    "standard_position": "Automatic renewal for successive one (1) year terms unless either party gives written notice of non-renewal at least thirty (30) days prior to the end of the current term.",
+    "acceptable_fallback": "Renewal for one (1) year terms with sixty (60) days advance written non-renewal notice; or transition to month-to-month continuation with thirty (30) days cancellation notice.",
+    "unacceptable_triggers": [
+      "perpetual auto-renewal with no right or mechanism to terminate",
+      "unreasonable non-renewal notice window requiring 180+ days notice or narrow restrictive window (e.g. exactly 5 days)",
+      "automatic annual price increases exceeding 10% without advance notification or right to terminate before increase takes effect"
+    ],
+    "preferred_language": "Following the Initial Term, this Agreement shall automatically renew for successive terms of one (1) year (each a 'Renewal Term') unless either party provides written notice of non-renewal to the other party at least thirty (30) days prior to the expiration of the then-current term.",
+    "rationale": "Prevents inadvertent evergreen lock-in and surprise rate hikes while preserving standard contractual continuity."
+  },
+  {
+    "rule_id": "DAT-01",
+    "clause_type": "data_protection",
+    "title": "Data Privacy Compliance, Security Safeguards, and Breach Notice",
+    "standard_position": "Both parties comply with applicable data protection laws (GDPR, CCPA/CPRA); industry-standard administrative, technical, and physical safeguards; breach notification within 72 hours of confirmed breach.",
+    "acceptable_fallback": "Incorporation of standard Data Processing Addendum (DPA); breach notification within 48 to 72 hours; audit rights limited to review of third-party audit reports (SOC 2 Type II, ISO 27001) once per year.",
+    "unacceptable_triggers": [
+      "unreasonable breach notification window (e.g., within 2 to 4 hours of suspicion)",
+      "unlimited or uncapped liability for general data security incidents without gross negligence qualification",
+      "unrestricted, unannounced physical facility audits by Counterparty at Company's cost",
+      "Customer claim to ownership or commercial monetization of Company system operational metadata"
+    ],
+    "preferred_language": "Each party shall comply with its obligations under applicable data privacy and security legislation, including GDPR and CCPA. Company shall maintain commercially reasonable administrative, technical, and physical safeguards designed to protect Customer Personal Data against accidental or unlawful destruction, loss, alteration, or unauthorized disclosure. In the event of a confirmed security incident impacting Customer Personal Data, Company shall notify Customer without undue delay and in any event within seventy-two (72) hours after becoming aware of the incident.",
+    "rationale": "Aligns data security practices with global regulatory frameworks without exposing the company to impossible response SLAs or intrusive on-site audit liabilities."
+  },
+  {
+    "rule_id": "ASG-01",
+    "clause_type": "assignment",
+    "title": "Assignment Restrictions and M&A Carve-Out",
+    "standard_position": "Neither party may assign without prior written consent, except either party may freely assign to an affiliate or in connection with a merger, acquisition, corporate reorganization, or sale of substantially all assets.",
+    "acceptable_fallback": "Assignment to affiliate or successor permitted with prior written notice, provided the assignee assumes all obligations in writing and is not a direct competitor of the non-assigning party.",
+    "unacceptable_triggers": [
+      "absolute restriction on assignment prohibiting transfer in connection with a merger, acquisition, or sale of assets (poison pill)",
+      "one-sided assignment right allowing Counterparty to assign freely while Company is strictly forbidden",
+      "right of Counterparty to terminate contract or demand penalty fees upon Company's change of control"
+    ],
+    "preferred_language": "Neither party may assign or transfer this Agreement, in whole or in part, without the prior written consent of the other party (such consent not to be unreasonably withheld or delayed); provided, however, that either party may assign this Agreement without consent to an affiliate or to a successor in interest in connection with a merger, acquisition, corporate reorganization, or sale of all or substantially all of its assets.",
+    "rationale": "Preserves company valuation and prevents counterparties from obstructing corporate liquidity events or asset acquisitions."
+  }
+]
